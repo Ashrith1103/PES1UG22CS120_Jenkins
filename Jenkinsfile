@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh './my_program' 
+                sh 'hello' 
                 echo 'Test Stage Successful'
             }
         }
@@ -22,6 +22,6 @@ pipeline {
     post {
         failure {
             echo 'Pipeline failed'
-        }
-    }
+        }
+    }
 }
